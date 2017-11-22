@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        
+            var time=prompt('Підкажіть яка зараз година?');
+            switch (time) {
+                case "1":
+                case "2":
+                case "3":
+                case "4":
+                case "5":
+                case "6":
+                case "7":
+                case "8":
+                case "9":
+                case "10": 
+                    { 
+                        document.write('Good Morning');
+                        break;
+                    };
+                case "11":
+                case "12":
+                case "13":
+                case "14":
+                case "15":
+                case "16":
+                case "17":
+                case "18":
+                case "19":
+                case "20": 
+                    { 
+                        document.write('Good Day');
+                        break;
+                    };
+                case "21":
+                case "22":
+                case "23":
+                case "24":
+                case "0":
+                    {
+                        document.write('Good evening');
+                        break;
+                    }
+        
+                default:
+                    {
+                        document.write("Ви ввели невірні символи");
+                        break;
+                    };
+            }
+            document.write('<br/>');
+            
+            var b = confirm("А ви сьгодні вживали їжу?"), mimi = 0;
+        
+            mimi = (b) ? document.write("Good") : document.write("Bon Appetit");
+            
+        </script>
+    </head>
+<body>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+   var summ = 0,
+    a = +prompt('Введіть число A'),
+    b = +prompt('Введіть число B, воно має бути більшим за А');
+    if (a >= b) {
+        document.write('Чило B має бути більшим за число A. Повторіть ввід');
+    } else {
+      document.write('Всі непарні значення, розміщенні в числовому проміжутку від А до В: ');
+        for (var i = a; i <= b; i++) {
+            summ += i;
+            if (i % 2 === 1) {
+                document.write (i + ' ');
+            }
+        }
+        document.write('<br>' + 'Сумма ввсіх чисел в проміжутку від А до В = ' + summ);
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+
+<!-- saved from url=(0042)http://127.0.0.1:62587/Lesson%202/HW1.html -->
+<html data-brackets-id="3655"><head data-brackets-id="3656"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body data-brackets-id="3657">
+<script data-brackets-id="3658">
+   var summ = 0,
+    a = +prompt('Введіть число A'),
+    b = +prompt('Введіть число B, воно має бути більшим за А');
+    if (a >= b) {
+        document.write('Чило B має бути більшим за число A. Повторіть ввід');
+    } else {
+      document.write('Всі непарні значення, розміщенні в числовому проміжутку від А до В: ');
+        for (var i = a; i <= b; i++) {
+            summ += i;
+            if (i % 2 === 1) {
+                document.write (i + ' ');
+            }
+        }
+        document.write('<br>' + 'Сумма ввсіх чисел в проміжутку від А до В = ' + summ);
+    }
+    </script>Чило B має бути більшим за число A. Повторіть ввід
+
+</body></html>
