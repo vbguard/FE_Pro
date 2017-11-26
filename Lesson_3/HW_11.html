@@ -1,0 +1,24 @@
+<html>
+<head>
+  <script type="text/javascript">
+    function Calculate(){
+      var x = prompt('input x');
+      var y = prompt('input y');
+      var z = prompt('input z');
+      if (x.replace (/\d/g, '').length) alert ('ви ввели не тільки цифри');
+      if (y.replace (/\d/g, '').length) alert ('ви ввели не тільки цифри');
+      var x1=parseInt(x);
+      var y1=parseInt(y);
+      var z1=parseInt(z);
+      var result = ((x1+y1+z1)/3);
+      document.write('Середннє арифметичне з 3-х чисел введеними вами: '+result.toFixed(2));
+
+    }
+    Calculate();
+
+
+  </script>
+</head>
+<body>
+</body>
+</html>

@@ -36,9 +36,8 @@
       }
       function div (){
         if (y == 0) { alert('На нуль не ділиться');}
-        var result = x / y; //Можна добавити Math.round() для заокруглення
-        //result1=Math.round(result);
-        document.write('Div: ' + result + '<br/>');
+        var result = x / y; 
+        document.write('Div: ' + result.toFixed(2) + '<br/>');
       }
       add();
       sub();

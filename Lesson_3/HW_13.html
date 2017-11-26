@@ -1,0 +1,31 @@
+<html>
+<head>
+  <script type="text/javascript">
+  var x = prompt('input global x');
+  var y = prompt('input global y');
+    function corensum(){
+      //var x = parseInt(x);
+      //var y = parseInt(y);
+      var gsumres = x+y;
+      document.write('Global summ result: '+gsumres+'<br/>');
+
+      var x = prompt('input local x');
+      var y = prompt('input local y');
+      if (x.replace (/\d/g, '').length) alert ('ви ввели не тільки цифри');
+      if (y.replace (/\d/g, '').length) alert ('ви ввели не тільки цифри');
+
+      var x1=parseInt(x);
+      var y1=parseInt(y);
+      var lsumres = x1+y1;
+      document.write('Local summ result: '+lsumres+"<br/>");
+
+    }
+    
+    corensum();
+
+
+  </script>
+</head>
+<body>
+</body>
+</html>

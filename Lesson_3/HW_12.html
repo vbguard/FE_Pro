@@ -1,0 +1,27 @@
+<html>
+<head>
+  <script type="text/javascript">
+    function corensum(){
+      var x = prompt('input x');
+      var y = prompt('input y');
+      if (x.replace (/\d/g, '').length) alert ('ви ввели не тільки цифри');
+      if (y.replace (/\d/g, '').length) alert ('ви ввели не тільки цифри');
+
+      var x1=parseInt(x);
+      var y1=parseInt(y);
+      //if (x){ (/[^\d,]/g, ''); };
+      //function provx(y){y.value = y.value.replace(/[^\d,]/g, '');};
+      var result = Math.sqrt(x1 + y1);
+      document.write('Ви ввели х: '+x1+"<br/>");
+      document.write('Ви ввели у: '+y1+"<br/>");
+      document.write('Квадратний корінь з суми цих чисел: '+result.toFixed(2));
+
+    }
+    corensum();
+
+
+  </script>
+</head>
+<body>
+</body>
+</html>
