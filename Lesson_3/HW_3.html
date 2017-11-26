@@ -1,0 +1,24 @@
+<html>
+<head>
+  <title>Йопт масив шкереберть</title>
+<script type="text/javascript">
+
+// створюємо двохвимірний масив
+var mas=new Array();
+var n=prompt('Введіть довжину масиву:');
+
+//заповнюємо масив
+for(i=0;i<n;i++)
+mas[i]=Math.round(Math.random()*10); //присвоюємо елементу випадкове число
+
+//виводимо масив
+document.write('Довжина масива (данні які ви ввели) -'+' '+ mas.length + '<hr/>');
+document.write('Не реверсний масив: '+mas.join(" & "));
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

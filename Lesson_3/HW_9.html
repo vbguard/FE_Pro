@@ -1,0 +1,78 @@
+<html>
+<head>
+  <title>КФ</title>
+</head>
+<body>
+  <div>
+    <p>Калькулятор №1 сам робив</p>
+    <!-- <div>Введіть перше число <input type="number" name="x" id="x"></div>
+    <div>Введіть друге число <input type="number" name="y" id="y"></div>
+        <div>
+          <input type="radio" name="Add" id="add">додавання<br/>
+          <input type="radio" name="Sub" id="sub">віднімання<br/>
+          <input type="radio" name="Mul" id="mul">множення<br/>
+          <input type="radio" name="Div" id="div">ділення<br/>
+        </div>
+    <div><input type="button" value="Результат" onclick="getResult()"  ></div> -->
+    <script type="text/javascript">
+      var  x = prompt('введіть значення х');
+      var  y = prompt('введіть значення y');
+
+      function add() {
+        var result = x + y;
+        document.write('Add: ' + result + '<br/>');
+      }
+      function sub (){
+        var result = x - y;
+        document.write('Sub: ' + result + '<br/>');
+      }
+      function mul (){
+        var result = x * y;
+        document.write('Mul: ' + result + '<br/>');
+      }
+      function div (){
+        var result = x / y; //Можна добавити Math.round() для заокруглення
+        document.write('Div: ' + result + '<br/>');
+      }
+      add();
+      sub();
+      mul();
+      div();
+    </script>
+
+  </div>
+
+
+
+<div>
+  <hr/>
+  <p>Калькулятор №2 копірайт</p>
+  <p>приклад вводу в перше вікно:</p>
+  <p>2*5; 2/4; 6-4; 7+11;</p>
+  <p>а в другому вікні буде розрахунок</p>
+  <div>
+      <input type = "text" id = "forCalculate">
+  		<input type = "button" value = "Розрахувати" id = "run">
+  		<input type = "text" id = "result" disabled>
+  		<script>
+  			function gid(id) {
+  				return document.getElementById(id);
+  			}
+
+  			gid("run").onclick = function() {
+  				var res, errMsg = "Помилка";
+  				try {
+  					res = eval(gid("forCalculate").value)
+  				} catch(e) {
+  					res = errMsg;
+  				}
+
+  				if(isNaN(+res)) res = errMsg;
+
+  				gid("result").value = res;
+  			}
+  		</script>
+</div>
+</div>
+</body>
+</html>

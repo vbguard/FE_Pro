@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>РІЗАК-2</title>
+<script type="text/javascript">
+
+  var a=[1,2,3,4,5,6,7,8,9,10];
+  klic = a.slice(0, 3);
+  document.write("<h3>"+klic.join(', ')+"</h3>");
+  document.write('Розмір масива: ' + klic.length);
+  //добавляємо дані до масиву
+  b1 = prompt("Введіть щось для додавання в масив даних");
+  b2 = prompt("Введіть щось для додавання в масив даних");
+  b3 = prompt("Введіть щось для додавання в масив даних");
+  var dodo=klic.splice(3,0,b1,b2,b3);
+  document.write('<hr/>'+'Після додачі: '+ klic.join(', '));
+  document.write('<br/>'+'Теперішня довжина масиву: '+klic.length);
+
+
+</script>
+
+</head>
+<body>
+</body>
+</html>

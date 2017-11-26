@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Йо</title>
+
+    <script type="text/javascript">
+
+        var name;
+        var age;
+        var email;
+        var living;
+        var webskill;
+
+        function ask() {
+            name = prompt("Введіть своє ім'я:");
+            age = prompt("Введіть свій вік:");
+            email = prompt("Введіть свій е-меїл:");
+            living = prompt("Місто де ви проживаєте:");
+            webskill = prompt("Введіть ваші навики Веб Розробника:");
+        }
+
+        function say() {
+            document.write("Ім'я: " + name + "<br />");
+            document.write("Вік: " + age + "<br />");
+            document.write("e-mail: " + email + "<br />");
+            document.write("Місто: " + living + "<br />");
+            document.write("Web-skill: " + webskill + "<br />");
+            document.write("<hr/>");
+        }
+    ask();
+    alert('Все готово');
+    say();
+    </script>
+
+</head>
+<body>
+</body>
+</html>
