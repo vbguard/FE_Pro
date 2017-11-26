@@ -17,9 +17,13 @@
     <script type="text/javascript">
       var  x = prompt('введіть значення х');
       var  y = prompt('введіть значення y');
+      document.write('Значення х: '+x+'<br/>');
+      document.write('Значення у: '+y+'<br/>');
 
       function add() {
-        var result = x + y;
+        var x1=parseInt(x);
+        var y1=parseInt(y);
+        var result = x1 + y1;
         document.write('Add: ' + result + '<br/>');
       }
       function sub (){
@@ -31,7 +35,9 @@
         document.write('Mul: ' + result + '<br/>');
       }
       function div (){
+        if (y == 0) { alert('На нуль не ділиться');}
         var result = x / y; //Можна добавити Math.round() для заокруглення
+        //result1=Math.round(result);
         document.write('Div: ' + result + '<br/>');
       }
       add();
