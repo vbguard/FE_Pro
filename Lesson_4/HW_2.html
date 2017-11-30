@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+<script type="text/javascript">
+function paste_fist() {
+  var newh1 = getElementById('text');
+  newh1.innerHTML = 'js work';
+}
+        var div = document.createElement('div');
+  div.className = "alert alert-success";
+  div.innerHTML = "<strong>Ура!</strong> Вы прочитали это важное сообщение.";
+
+  document.body.appendChild(div);
+
+      </script>
+
+</head>
+  <body>
+<div id='text'><h1>TEXT</h1></div>
+<button onclick="paste_fist()">Paste inside</button>
+<button onclick="paste_after()">Paste outside</button>
+
+<script>
+  var div = document.createElement('div');
+  div.className = "alert alert-success";
+  div.innerHTML = "<strong>Ура!</strong> Вы прочитали это важное сообщение.";
+
+  document.body.appendChild(div);
+
+  var newh1 = getElementById('text');
+  newh1.innerHTML = 'js work';
+  document.text.appendChild(newh1);
+</script>
+
+  </body>
+
+</html>
