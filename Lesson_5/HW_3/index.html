@@ -1,13 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>L4-HW-1</title>
-    <script src="script.js"></script>
-</head>
-<body>
-    
-</body>
-</html>
+<html>
+        <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <script type="text/javascript">
+             
+         
+        function ValidPhone() {
+            var re = /^\d\(\d{3}\)\d{5}/;
+            var myPhone = document.getElementById('phone').value;
+            var valid = re.test(myPhone);
+            if (valid) {
+                document.getElementById('phone').className = 'right';
+                output = 'Номер телефона введено правильно!'}
+            else {
+                document.getElementById('phone').className = 'wrong';
+                output = 'Номер телефона введено неправильно!';};
+
+            document.getElementById('message').innerHTML = document.getElementById('message').innerHTML+'<br>'+output;
+            return valid;
+        }  
+         
+        </script>
+        <style>
+        .right {
+            border: 1px solid green;
+        }
+        .wrong {
+            border: 1px solid red;
+        }
+        </style>
+        </head>
+        
+        <body>
+        <p id="message" >Заповніть форму</p> 
+        
+        Телефон: <input id="phone" name="phone" type="text" size="20" maxlength="11" placeholder="приклад:8(123)12345"><br> 
+        <input name="button" type="submit" value="Перевірити" onClick="ValidPhone();" >
+        </body>
+        
+        </html>
