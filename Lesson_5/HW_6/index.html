@@ -5,18 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>L5-HW-6</title>
-    <script src="script/script.js"></script>
+    <script src="js/script.js"></script>
     <style>
-    .obodok{
-
-    } 
-    .rborder{border: 1px solid red;}
+    .cheked{
+        border: 1px solid red;
+    }
     </style>
 </head>
 <body>
-<input type="text" class="obodok" onblur="red">         
-<input type="text" class="obodok" onblur="">
-<input type="text" class="obodok" onblur="Cheked();">
-<!-- Чи потрібно кожному інпуту надати ІД і тоді знаходити по ІД і міняти клас? Чи додавати якийсь відповідно стиль? -->
+<input type="text" id="put" onblur="Cheked(this.value);">         
+<!-- <input type="text" id="effect" onblur="ChekedD(this.value);">   -->
 </body>
 </html>

@@ -5,9 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>L5-HW-7</title>
-    <script src="script/script.js"></script>
 </head>
-<body>
-    
-</body>
+<body onResize="sizeWindow()">
+    <h3>Змініть розмір вашого браузера</h3>
+    <div id="dataoutput"></div>
+    <script>
+    function sizeWindow() {
+        var width = window.outerWidth;
+        var height = window.outerHeight;
+        var datatext = "Розміри Вашого вікна:"+"<br>"+"ширина= " + width +"<br>"+"висота= " + height;
+        document.getElementById("dataoutput").innerHTML = datatext;
+    }
+    </script>
+ </body>
 </html>
