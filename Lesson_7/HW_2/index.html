@@ -13,14 +13,14 @@
 </head>
 <body>
   <div class="new-year-tree">2018</div>
-<form>
-  <label for="">Імя, Прізвище </label><input type="text" class="button" name="login" placeholder="введіть тут" autofocus>
-  <label for="">Е-майл </label><input type="text" class="button" name="login" placeholder="введіть тут" autofocus>
-  <label for="">Пароль </label><input type="text" class="button" name="login" placeholder="введіть тут" autofocus>
+<form name="myform" method="post" action="#" onsubmit="return validateemail(); return validateform();">
+  <label for="">Імя, Прізвище </label><input type="text" class="button" name="name" placeholder="введіть тут" autofocus>
+  <label for="">Е-майл </label><input type="text" class="button" name="email" placeholder="введіть тут" autofocus>
+  <label for="">Пароль </label><input type="text" class="button" name="password" placeholder="введіть тут" autofocus>
   <div class="form-grid-item-5"><label class="container">Погоджуєтесь з <a href="">Умовами</a><input type="checkbox"><span class="checkmark"></span></label>  
     
   </div> 
-  <div><input type="submit" id="register" value="Register" disabled="disabled" /></div>
+  <div><input type="submit" id="register" value="Register" ></div>
 </form>
   <script src="js/script.js"></script>
 </body>

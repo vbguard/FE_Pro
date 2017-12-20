@@ -6,12 +6,12 @@ document.onkeyup = function() {
 function changeColor(keyCode) {
     var pushkey = event.keyCode;
     if (pushkey == 114 ) { // r
-        document.getElementById("text").style.color = "red";
+        document.getElementById("text-r").style.color = "red";
     }
     if (pushkey == 103 ) { // r
-        document.getElementById("text").style.color = "green";
+        document.getElementById("text-g").style.color = "green";
     }
     if (pushkey == 98 ) { // r
-        document.getElementById("text").style.color = "blue";
+        document.getElementById("text-b").style.color = "blue";
     }
 }

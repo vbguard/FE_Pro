@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button onclick="seeimgone()">IMG 1</button>
+        <button onclick="seeimgtwo()">IMG 2</button>
+        <button onclick="seeimgthre()">IMG 3</button>
+    </div>
+    <div style="margin:auto auto;" >
+        <img id="image" alt="some picture">
+    </div>
+    <script>
+        function seeimgone() {
+            document.getElementById("image").setAttribute( "src" ,"https://dummyimage.com/450x500.png");
+        }
+        function seeimgtwo() {
+            document.getElementById("image").setAttribute( "src" ,"https://dummyimage.com/500x500.png");
+        }
+        function seeimgthre() {
+            document.getElementById("image").setAttribute( "src" ,"https://dummyimage.com/400x500.png");
+        }
+    </script>
+</body>
+</html>

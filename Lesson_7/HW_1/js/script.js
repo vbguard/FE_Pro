@@ -2,7 +2,7 @@
  var cake_prices = new Array();
  cake_prices["Little"]=20;
  cake_prices["Middle"]=25;
- cake_prices["Bigest"]=35;
+ cake_prices["Biggest"]=35;
  
  var filling_prices= new Array();
  filling_prices["None"]=0;
@@ -64,15 +64,14 @@ function orderComplite() {
     newWindow.location.href = ("submit.html");
 }
 
-jQuery.validator.addMethod("requiredRadioValue", function(value, element, params) { 
-    var selectedValue = $('input:radio[name=' + element.name + ']:checked').val(); 
-    return (typeof(params) == 'array') ? (params.indexOf(selectedValue) != -1) : selectedValue == params;
-}, "You must select the required option."); 
-
-
-//  if (empty) {
-//     $('#submit').attr('disabled', 'disabled'); 
-//   } else {
-//     $('#submit').removeAttr('disabled'); 
-//   }
-    
+function ValidPhone() {
+    var re = /^\d\(\d{3}\)\d{5}/;
+    var myPhone = document.getElementById('phonenumber').value;
+    var valid = re.test(myPhone);
+    if (valid) {
+        document.getElementById('phone').className = 'right';
+        output = 'Номер телефона введено правильно!'}
+    else {
+        document.getElementById('phone').className = 'wrong';
+        output = 'Номер телефона введено неправильно!';};
+}
